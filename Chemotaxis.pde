@@ -35,9 +35,9 @@ class Bacteria
   {
     myX = (int)(Math.random()*500);
     myY = (int)(Math.random()*500);
-    myBlue = (int)(Math.random()*256);
-    myRed = (int)(Math.random()*256);
-    myGreen = (int)(Math.random()*256);
+    myBlue = (int)(Math.random()*250+6);
+    myRed = (int)(Math.random()*250+6);
+    myGreen = (int)(Math.random()*250+6);
   }
   void walk()
   {
@@ -45,7 +45,7 @@ class Bacteria
       myX = myX + (int)(Math.random()*7)-1;
     else
       myX = myX + (int)(Math.random()*7)-5;
-    if (mouseY>myY)
+    if (mouseY > myY)
       myY = myY + (int)(Math.random()*7)-1;
     else
       myY = myY + (int)(Math.random()*7)-5;
